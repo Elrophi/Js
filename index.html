@@ -37,7 +37,6 @@
 
 
 
-</body>
 
 <script type="text/javascript">
 	var app = new function(){
@@ -67,7 +66,7 @@
 					data += '<tr>';
 					data += '<td>' + this.countries[i] + '</td>';
 					data += '<td><button onclick="app.Edit(' + i + ')">Edit</button></td>'
-					data += '<td><button onclick="app.Delete(' + i + ')>Delete</button></td>';
+					data += '<td><button onclick="app.Delete(' + i + ')">Delete</button></td>';
 					data += '</tr>';
 				}
 			}
@@ -110,7 +109,7 @@
 		this.Delete = function (item){
 			this.countries.splice(item, 1);
 			this.FetchAll();
-		}
+		};
 	}
 
 	app.FetchAll();
@@ -119,4 +118,5 @@
 		document.getElementById('spoiler').style.display = 'none';
 	}	
 </script>
+	</body>
 </html>
